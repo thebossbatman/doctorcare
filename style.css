@@ -594,7 +594,7 @@ nav#navigation .social-links{
     
     border: 1px solid var(--primary-color);
     border-radius: 4rem;
-
+    
     color: var(--primary-color);
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -613,10 +613,14 @@ nav#navigation .social-links{
     opacity: 0.6;
   }
 
-  nav#navigation .menu a.button{
-    border-color: white;
-    color: white;
+  nav#navigation.scroll .menu a.button{
+    color: var(--brand-light-2);
+
+    border: 1px solid var(--brand-light-2);
+    border-radius: 4rem;
   }
+
+ 
 
   nav#navigation .menu li a.active, 
   nav#navigation .menu li a:hover{
@@ -656,9 +660,10 @@ nav#navigation .social-links{
 
   }
 
-  nav#navigation.scroll .menu a.button.active
+  nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover{
     background-color: var(--primary-color);
+    color: var(--brand-light-2);
     filter: brightness(1.3);
     border: none;
   }
